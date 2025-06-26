@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+</head>
+<body class="bg-slate-900 text-white">
+  <div class="max-w-screen-md mx-auto py-10">
+    <h1 class="text-3xl font-bold mb-3">Tasks here</h1>
+
+    <form id="form" class="flex flex-col gap-3 text-slate-800">
+      <input class="rounded py-1 px-2 text-cyan-50" type="text" name="title" placeholder="title...">
+      <textarea class="rounded py-1 px-2 text-cyan-50" rows="3" name="desc" placeholder="description..."></textarea>
+      <button class="bg-slate-600 text-white py-1 px-2 rounded" type="submit">add</button>
+    </form>
+
+    <hr class="my-4">
+
+    <div id="tasks-list" class="grid gap-4"></div>
+  </div>  
+
+  <script src="./main.js"></script>
+</body>
+</html>
